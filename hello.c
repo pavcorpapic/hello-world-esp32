@@ -9,9 +9,9 @@ void app_main() {
     gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
 
     while (1) {
-        gpio_set_level(LED_PIN, 1); // Turn the LED on
+        gpio_set_level(LED_PIN, 1); 
         vTaskDelay(500 / portTICK_PERIOD_MS); 
-        gpio_set_level(LED_PIN, 0); // Turn the LED off
+        gpio_set_level(LED_PIN, 0); 
         vTaskDelay(500 / portTICK_PERIOD_MS); 
     }
 }
